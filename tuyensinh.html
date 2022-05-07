@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/tuyensinh.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="text-align: center">KẾT QUẢ KỲ THI TUYỂN SINH</h1>
+      <table cellpadding="5px" cellspacing="3px">
+        <tr>
+          <td><label for="benchmark">Điểm chuẩn: </label></td>
+          <td>
+            <input
+              type="text"
+              id="benchmark"
+              placeholder="Điểm chuẩn của hội đồng"
+            />
+          </td>
+        </tr>
+      </table>
+      <h2 style="text-align: left; margin-left: 20px">Điểm của thí sinh:</h2>
+      <table cellpadding="5px" cellspacing="3px">
+        <tr>
+          <td><label for="math">Điểm Toán: </label></td>
+          <td>
+            <input type="text" id="math" placeholder="Nhập điểm" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="physics">Điểm Lý: </label></td>
+          <td>
+            <input type="text" id="physics" placeholder="Nhập điểm" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="english">Điểm Anh: </label></td>
+          <td>
+            <input type="text" id="english" placeholder="Nhập điểm" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="area">Khu vực: </label></td>
+          <td>
+            <select name="area" id="area">
+              <option value="0">Không thuộc khu vực ưu tiên</option>
+              <option value="2">Khu vực A</option>
+              <option value="1">Khu vực B</option>
+              <option value="0.5">Khu vực C</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="argument">Đối tượng dự thi: </label></td>
+          <td>
+            <select name="argument" id="argument">
+              <option value="0">Không thuộc đối tượng ưu tiên</option>
+              <option value="2.5">Đối tượng 1</option>
+              <option value="1.5">Đối tượng 2</option>
+              <option value="1">Đối tượng 3</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <button class="btn" onclick="calculateScore()">Kết quả</button>
+      <div id="result" style="display: none">
+        <div id="score"></div>
+        <div id="text"></div>
+      </div>
+    </div>
+
+    <script src="./tuyensinh.js"></script>
+  </body>
+</html>

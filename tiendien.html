@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/tiendien.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>TRA CỨU THÔNG TIN TIÊU THỤ ĐIỆN</h1>
+      <table cellpadding="5px" cellspacing="3px" style="text-align: left">
+        <tr>
+          <td><label for="account">Tên khách hàng</label></td>
+          <td><input type="text" id="account" /></td>
+        </tr>
+        <tr>
+          <td><label for="use">Số điện tiêu thụ</label></td>
+          <td><input type="text" id="use" style="width: 100px" /> Kw</td>
+        </tr>
+      </table>
+      <button class="btn" onclick="calElectric()">TRA CỨU</button>
+      <div id="result">5000KWH</div>
+    </div>
+    <script src="./tiendien.js"></script>
+  </body>
+</html>
